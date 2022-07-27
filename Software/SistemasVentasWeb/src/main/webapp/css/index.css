@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container_page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #303952;
+    z-index: 1;
+    opacity: 0.85;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    z-index: 2;
+}
+/* contenedor login */
+.container-login {
+    background: rgba(255, 255, 255, 0.815);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.login {
+    width: 80%;
+    margin: auto;
+}
+
+.login-title {
+    text-align: center;
+}
+
+.login-img {
+    width: 100%;
+    height: auto;
+}
+
+.login-img img {
+    width: 100%;
+    height: 100%;
+}
+/* contenedor frase + redes sociales */
+.container-fras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: 70%;
+    flex-direction: column;
+}
+
+.frase {
+    font-family: "Courgette", cursive;
+    font-size: 4em;
+    text-align: center;
+    color: white;
+}
+
+.redes-sociales {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.redes-sociales a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 100px;
+}
+.redes-sociales .facebook {
+    background: #3b5998;
+}
+.redes-sociales .whatsapp {
+    background: #00ff00;
+}
+.redes-sociales a i {
+    font-size: 35px;
+    line-height: 60px;
+}
+
+@media (max-width: 1240px) {
+    .container-login {
+        width: 40%;
+    }
+    .container-fras {
+        width: 60%;
+    }
+}
+@media (max-width: 810px) {
+    .container-login {
+        width: 100%;
+    }
+    .container-fras {
+        display: none;
+    }
+}
