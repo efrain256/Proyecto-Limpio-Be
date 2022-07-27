@@ -1,0 +1,15 @@
+
+
+/*Para Plugin animated_cicles_spinner*/
+#contenedor-loader{
+    position: fixed;
+    z-index: 25000;
+    background: #f5f5f5;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
